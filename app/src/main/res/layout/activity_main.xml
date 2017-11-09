@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jcmano.datawriting.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data: "
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnInternalCache"
+        android:text="Internal Cache"
+        android:onClick="saveInternalCache"
+
+        android:layout_below="@+id/etData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnExternalCache"
+        android:text="External Cache"
+        android:onClick="saveExternalCache"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnInternalCache"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnExternalStorage"
+        android:text="External Storage"
+        android:onClick="saveExternalStorage"
+
+        android:layout_below="@+id/btnExternalCache"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnExternalPublicStorage"
+        android:text="External Public Storage"
+        android:onClick="saveExternalPublicStorage"
+
+        android:layout_below="@+id/btnExternalStorage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnNext"
+        android:text="Next"
+        android:onClick="nextPage"
+
+        android:layout_below="@+id/btnExternalPublicStorage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

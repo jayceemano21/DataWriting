@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jcmano.datawriting.Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/tvDisplay"
+
+        android:text="Display Here"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnLoadInternalStorage"
+        android:text="Load internal cache"
+        android:onClick="loadInternalCache"
+
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvDisplay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnLoadExternalCache"
+        android:text="Load External Cache"
+        android:onClick="loadExternalCache"
+
+        android:layout_below="@+id/btnLoadInternalStorage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnLoadExternalStorage"
+        android:text="Load external storage"
+        android:onClick="loadExternalStorage"
+
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btnLoadExternalCache"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/btnLoadExternalPublicStorage"
+        android:text="Load External Public Storage"
+        android:onClick="loadExternalPublicStorage"
+
+        android:layout_below="@+id/btnLoadExternalStorage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/backPage"
+        android:text="Previous"
+        android:onClick="backPage"
+
+        android:layout_below="@+id/btnLoadExternalPublicStorage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
